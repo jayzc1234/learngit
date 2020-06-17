@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e481d0f3-91b3-4414-aa6f-166443bc0406" name="Default Changelist" comment="" />
+    <list default="true" id="e481d0f3-91b3-4414-aa6f-166443bc0406" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/PersonMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/datasource/DynamicDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxs/config/datasource/DynamicDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/pojo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxs/pojo/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxs/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zxs/test/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/datasource/DynamicDataSourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxs/config/datasource/DynamicDataSourceConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/mapper/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxs/mapper/StudentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/pojo/Person$Personhandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/pojo/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxs/pojo/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxs/service/PersonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zxs/test/Test1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zxs/test/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zxs-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zxs-springboot.iml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="zxs-springboot" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -25,7 +50,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1W3UmVh4LjEMye1xPZ1nAAwId07" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567750360184" />
@@ -60,20 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ApplicationBootApp">
-    <configuration name="ApplicationBootApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zxs.ApplicationBootApp" />
-      <module name="zxs-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zxs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MybatisTest1.batchInsert">
     <configuration name="ArrayStackTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zxs.test.concurrent.ArrayStackTest" />
       <module name="zxs-springboot" />
@@ -95,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReadAndWriteLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.concurrent.ReadAndWriteLock" />
+    <configuration name="MybatisTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zxs.test.mybatis.MybatisTest1" />
       <module name="zxs-springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zxs.test.concurrent.*" />
+          <option name="PATTERN" value="com.zxs.test.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,41 +146,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SyncTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.concurrent.SyncTest" />
+    <configuration name="MybatisTest1.batchInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zxs-springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zxs.test.concurrent.*" />
+          <option name="PATTERN" value="com.zxs.test.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.zxs.test.mybatis" />
+      <option name="MAIN_CLASS_NAME" value="com.zxs.test.mybatis.MybatisTest1" />
+      <option name="METHOD_NAME" value="batchInsert" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.Test1" />
+    <configuration name="SpelTest1.compile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zxs-springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zxs.test.*" />
+          <option name="PATTERN" value="com.zxs.test.spel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.zxs.test.spel" />
+      <option name="MAIN_CLASS_NAME" value="com.zxs.test.spel.SpelTest1" />
+      <option name="METHOD_NAME" value="compile" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadLocalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.concurrent.ThreadLocalTest" />
+    <configuration name="SpelTest1.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="zxs-springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zxs.test.concurrent.*" />
+          <option name="PATTERN" value="com.zxs.test.spel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.zxs.test.spel" />
+      <option name="MAIN_CLASS_NAME" value="com.zxs.test.spel.SpelTest1" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpelTest1.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="zxs-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zxs.test.spel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zxs.test.spel" />
+      <option name="MAIN_CLASS_NAME" value="com.zxs.test.spel.SpelTest1" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,19 +221,19 @@
       <item itemvalue="Application.HeapOOM" />
       <item itemvalue="Application.StackOOM" />
       <item itemvalue="Application.ArrayStackTest" />
-      <item itemvalue="Application.ApplicationBootApp" />
-      <item itemvalue="Application.SyncTest" />
-      <item itemvalue="Application.ThreadLocalTest" />
-      <item itemvalue="Application.ReadAndWriteLock" />
-      <item itemvalue="Application.Test1" />
+      <item itemvalue="JUnit.SpelTest1.test4" />
+      <item itemvalue="JUnit.SpelTest1.test5" />
+      <item itemvalue="JUnit.SpelTest1.compile" />
+      <item itemvalue="Application.MybatisTest1" />
+      <item itemvalue="JUnit.MybatisTest1.batchInsert" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ApplicationBootApp" />
-        <item itemvalue="Application.Test1" />
-        <item itemvalue="Application.ReadAndWriteLock" />
-        <item itemvalue="Application.SyncTest" />
-        <item itemvalue="Application.ThreadLocalTest" />
+        <item itemvalue="JUnit.MybatisTest1.batchInsert" />
+        <item itemvalue="Application.MybatisTest1" />
+        <item itemvalue="JUnit.SpelTest1.compile" />
+        <item itemvalue="JUnit.SpelTest1.test5" />
+        <item itemvalue="JUnit.SpelTest1.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +256,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -251,7 +305,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/Test1.java</url>
-          <line>31</line>
+          <line>37</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -444,10 +498,60 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zxs/service/PersonService.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="157" />
+          <line>31</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1-sources.jar!/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.java</url>
+          <line>188</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/main/Main1.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/main/Main1.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/spel/SpelTest1.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/spel/SpelTest1.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/spel/SpelTest1.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1-sources.jar!/org/apache/ibatis/executor/statement/PreparedStatementHandler.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/mybatis/MybatisTest1.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/mybatis/MybatisTest1.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="179" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((java.beans.MethodDescriptor[])((GenericBeanInfo)beanInfo).methods)[8]" custom="java.beans.MethodDescriptor[],java.beans.GenericBeanInfo" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

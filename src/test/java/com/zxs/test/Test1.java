@@ -12,9 +12,15 @@ import java.nio.channels.FileChannel;
 
 public class Test1 {
     public static void main(String[] args) throws IOException, NoSuchMethodException {
-        Method print = BasePrint.class.getMethod("print", new Class[]{String.class});
-        Method print2 = BasePrintImp.class.getMethod("print", new Class[]{String.class});
 
+        String s1 = new StringBuilder().append("ja").append("va1").toString();
+        String s2 = s1.intern();
+        System.out.println(s2 == s1);
+
+        String s5 = "dmz";
+        String s3 = new StringBuilder().append("d").append("mz").toString();
+        String s4 = s3.intern();
+        System.out.println(s3 == s4);
     }
 
     private static void readFile(File file) throws IOException {

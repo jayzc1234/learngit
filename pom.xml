@@ -3,13 +3,13 @@
   <groupId>com-zxs-springboot</groupId>
   <artifactId>zxs-springboot</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.5.10.RELEASE</version>
-    <relativePath/> <!-- lookup parent from repository -->
-  </parent>
+
+	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-gateway</artifactId>
+		<version>2.0.2.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
     <properties>
         <javaVersion>1.8</javaVersion>
         <grpc.stater.version>2.0.1.RELEASE</grpc.stater.version>
@@ -26,27 +26,73 @@
 		<maven.surefire.plugin.version>2.17</maven.surefire.plugin.version>
 		<mybatis-spring.version>1.3.0</mybatis-spring.version>
 		<flyway.version>5.2.1</flyway.version>
+		<spring.cloud-version>Hoxton.SR8</spring.cloud-version>
     </properties>
-    
+
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/libs-snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
   <dependencies>
+	  <dependency>
+		  <groupId>org.springframework.cloud</groupId>
+		  <artifactId>spring-cloud-starter-config</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.springframework.cloud</groupId>
+		  <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+	  </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+	  <dependency>
+		  <groupId>org.springframework.cloud</groupId>
+		  <artifactId>spring-cloud-commons</artifactId>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.springframework.cloud</groupId>
+		  <artifactId>spring-cloud-starter-eureka</artifactId>
+		  <version>2.0.0.M1</version>
+	  </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-               
-       		<dependency>
+
+	  <!-- 公共组件 -->
+	  <dependency>
+		  <groupId>net.app315</groupId>
+		  <artifactId>nail-common</artifactId>
+		  <version>1.4-SNAPSHOT</version>
+	  </dependency>
+
+	  <dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
 		</dependency>
 
-		<dependency>
+	  <!-- https://mvnrepository.com/artifact/org.atteo.moonshine/atomikos -->
+	  <dependency>
+		  <groupId>org.atteo.moonshine</groupId>
+		  <artifactId>atomikos</artifactId>
+		  <version>1.1</version>
+	  </dependency>
+
+	  <dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
@@ -152,14 +198,15 @@
 	  </dependency>
 
 	  <dependency>
-		  <groupId>mysql</groupId>
-		  <artifactId>mysql-connector-java</artifactId>
-		  <scope>runtime</scope>
-	  </dependency>
-	  <dependency>
 		  <groupId>com.alibaba</groupId>
 		  <artifactId>druid-spring-boot-starter</artifactId>
 		  <version>1.1.10</version>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>com.mchange</groupId>
+		  <artifactId>c3p0</artifactId>
+		  <version>0.9.5.3</version>
 	  </dependency>
 
 	  <!-- redis依赖 -->
@@ -179,6 +226,70 @@
 		  <groupId>io.projectreactor</groupId>
 		  <artifactId>reactor-core</artifactId>
 		  <version>3.3.4.RELEASE</version>
+	  </dependency>
+
+<!--	  <dependency>-->
+<!--		  <groupId>com.ctrip.framework.apollo</groupId>-->
+<!--		  <artifactId>apollo-client</artifactId>-->
+<!--		  <version>1.1.0</version>-->
+<!--	  </dependency>-->
+
+<!--	  <dependency>-->
+<!--		  <groupId>com.atomikos</groupId>-->
+<!--		  <artifactId>transactions-jdbc</artifactId>-->
+<!--		  <version>4.0.6</version>-->
+<!--	  </dependency>-->
+
+	  <dependency>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+		  <version>5.1.39</version>
+	  </dependency>
+
+	  <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+	  <dependency>
+		  <groupId>org.aspectj</groupId>
+		  <artifactId>aspectjweaver</artifactId>
+		  <version>1.9.0</version>
+	  </dependency>
+
+	  <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-core -->
+	  <dependency>
+		  <groupId>org.apache.lucene</groupId>
+		  <artifactId>lucene-core</artifactId>
+		  <version>3.0.0</version>
+	  </dependency>
+	  <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers -->
+	  <dependency>
+		  <groupId>org.apache.lucene</groupId>
+		  <artifactId>lucene-analyzers</artifactId>
+		  <version>3.0.0</version>
+	  </dependency>
+
+	  <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
+	  <dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-security</artifactId>
+		  <version>2.3.3.RELEASE</version>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>net.bull.javamelody</groupId>
+		  <artifactId>javamelody-spring-boot-starter</artifactId>
+		  <version>1.85.0</version>
+	  </dependency>
+
+	  <dependency>
+		  <groupId>com.alibaba</groupId>
+		  <artifactId>transmittable-thread-local</artifactId>
+		  <version>2.2.0</version>
+	  </dependency>
+
+	  <!-- http -->
+	  <dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>httpclient</artifactId>
+		  <version>4.5.2</version>
 	  </dependency>
 
   </dependencies>

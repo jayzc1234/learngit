@@ -2,30 +2,508 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e481d0f3-91b3-4414-aa6f-166443bc0406" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/PersonMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/zxs/config/datasource/ThreadPoolExecutorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/zxs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_29.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_45.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_8_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_27.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_14_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid45904.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/datasource/DynamicDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxs/config/datasource/DynamicDataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/StudentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/pojo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxs/pojo/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxs/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zxs/test/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/datasource/DynamicDataSourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxs/config/datasource/DynamicDataSourceConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/mapper/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxs/mapper/StudentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/pojo/Person$Personhandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/pojo/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxs/pojo/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/PersonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxs/service/PersonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zxs/test/Test1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/model/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zxs/test/model/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/ApplicationBootApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/Swagger2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/algorithm/TwodimensionFind.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/algorithm/strategy/CaseStrategyFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/algorithm/strategy/CashCondition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/algorithm/strategy/CashContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/algorithm/strategy/CashStargety.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/algorithm/strategy/CashStragtegyMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/algorithm/strategy/DiscountCashStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/algorithm/strategy/FullReductionCashStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/datasource/DynamicDataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/swagger/ApiJsonObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/swagger/ApiJsonProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/swagger/ArrayRefProperty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/swagger/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/swagger/MapApiReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/config/swagger/Swagger2Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/controller/IndexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/datastruct/linked/SingleLinked.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/datastruct/linked/SingleLinkedNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/adapter/Cock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/adapter/CockAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/adapter/Duck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/adapter/WildCock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/adapter/WildDuck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/dynamicproxy/DynamicMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/dynamicproxy/LoveImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/dynamicproxy/LoveInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/dynamicproxy/MyInvokeHander.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/dynamicproxy/advice/MyAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/dynamicproxy/advisor/Myadvisor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/dynamicproxy/cglib/MyMethodInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/factory/CacheLogFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/factory/FileLogFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/factory/LogFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/factory/SingleTon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/factory/handlers/CachedLogHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/factory/handlers/FileLogHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/factory/handlers/LogHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/strategy/CashDiscount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/strategy/Discount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/strategy/StrategyContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/test/FactoryTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/designmode/test/Serialize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/dto/FieldBusinessParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/dto/MyThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/lifestyle/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/BaseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/PersonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/nio/SingleReactor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/nio/test/NioClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/nio/test/NioServerMultiReactor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/pojo/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/pojo/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/processor/InstantiationProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/processor/MergedProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/processor/MyBeanPostProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/processor/SmartProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/profile/DevProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/profile/ProProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/profile/TestProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rocketmq/Consumer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rocketmq/SyncProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/CompletableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/DeferAndJustTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/FlatMapObservableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/GroupbyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/MapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/RangeObservableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/RepeatAndTimerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/RxJavaTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/ScanObservableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/SingleObservableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/WindowObservableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/combine/JoinAndGroupjoinTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/combine/MergeAndMergeDelayErrorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/combine/StartWithTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/combine/SwitchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/combine/ZipTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/BlockingObservableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/DebounceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/DistinctTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/DistinctUntilChangedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/ElementAtTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/FilterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/FirstAndLastTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/SampleAndThrottleFirstTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/SkipAndTakeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/filter/ThrottleWithTimeoutTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/model/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/model/CastObservableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/model/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/onerror/OnErrorReturnTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/rxjava/scheduler/ThreadTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/ApplicationAwareTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/BaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/BeanDITest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/MyPrintService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/PersonService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/SonService1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/SonService2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxs/service/TestService1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/DBUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/Hold.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/algorithm/ReverseLinked.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/ArrayBlockQueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/ArrayStackTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/CopyOnWriteArrayListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/DirectMemoryOOM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/LinkedStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/LinkedTransferQueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/MArrayBlockingQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/MArrayBlockingQueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/ReadAndWriteLock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/SingleLinkedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/SyncTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/SynchronousQueueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/ThreadLocalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/VolatileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/flux/FluxTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/Americano.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/Breve.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/Cappuccino.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/Coffee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/CoffeeGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/FiveTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/FourTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/Impossible.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/Latte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/Mocha.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/ThreeTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/TupleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/generics/TwoTuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/innerclass/Outer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/innerclass/Parcel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/interfce/BasePrint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/interfce/BasePrintImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/jvm/HeapOOM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/jvm/StackOOM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/jvm/ThreadTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/main/DataBinderMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/main/Main1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/Inventor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/ListNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/MInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/NoJavaBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/OneWayNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/PlaceOfBirth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/model/Society.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/mybatis/MybatisTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/other/ListNodeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/other/PatternTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/other/RecursiveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/other/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/spel/SpelTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zxs/test/threadpool/ThreadPoolTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes-pg.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/zxs-springboot.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/zxs-springboot.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/ApplicationBootApp$Fly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/ApplicationBootApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/Swagger2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/algorithm/TwodimensionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/algorithm/strategy/CaseStrategyFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/algorithm/strategy/CashCondition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/algorithm/strategy/CashContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/algorithm/strategy/CashStargety.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/algorithm/strategy/CashStragtegyMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/algorithm/strategy/DiscountCashStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/algorithm/strategy/FullReductionCashStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/datasource/DynamicDataSourceConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/swagger/ApiJsonObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/swagger/ApiJsonProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/swagger/ArrayRefProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/swagger/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/swagger/MapApiReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/config/swagger/Swagger2Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/controller/IndexController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/datastruct/linked/SingleLinked.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/datastruct/linked/SingleLinkedNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/adapter/Cock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/adapter/CockAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/adapter/Duck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/adapter/WildCock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/adapter/WildDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/dynamicproxy/DynamicMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/dynamicproxy/LoveImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/dynamicproxy/LoveInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/dynamicproxy/MyInvokeHander.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/dynamicproxy/advice/MyAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/dynamicproxy/advisor/Myadvisor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/CacheLogFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/FileLogFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/LogFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/SingleTon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/SingleTon$Hodler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/SingleTon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/handlers/CachedLogHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/handlers/FileLogHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/factory/handlers/LogHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/strategy/CashDiscount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/strategy/Discount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/strategy/StrategyContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/test/FactoryTest1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/designmode/test/Serialize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/dto/FieldBusinessParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/dto/MyThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/lifestyle/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/mapper/StudentMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/nio/SingleReactor$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/nio/SingleReactor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/nio/test/NioClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/nio/test/NioServerMultiReactor$SocketDepart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/nio/test/NioServerMultiReactor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/pojo/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/pojo/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/processor/InstantiationProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/processor/MergedProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/processor/MyBeanPostProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/processor/SmartProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/profile/DevProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/profile/ProProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/profile/TestProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rocketmq/Consumer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rocketmq/Consumer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rocketmq/SyncProducer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rocketmq/SyncProducer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/CompletableTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/CompletableTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/CompletableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/DeferAndJustTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/DeferAndJustTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/DeferAndJustTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/DeferAndJustTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/FlatMapObservableTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/FlatMapObservableTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/FlatMapObservableTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/FlatMapObservableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/GroupbyTest$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/GroupbyTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/GroupbyTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/GroupbyTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/GroupbyTest$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/GroupbyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/MapTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/MapTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/MapTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/RangeObservableTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/RangeObservableTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/RangeObservableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/RepeatAndTimerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/RxJavaTest1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/RxJavaTest1$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/RxJavaTest1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/ScanObservableTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/ScanObservableTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/ScanObservableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/SingleObservableTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/SingleObservableTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/SingleObservableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/WindowObservableTest$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/WindowObservableTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/WindowObservableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/JoinAndGroupjoinTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/JoinAndGroupjoinTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/JoinAndGroupjoinTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/JoinAndGroupjoinTest$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/JoinAndGroupjoinTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/MergeAndMergeDelayErrorTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/MergeAndMergeDelayErrorTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/MergeAndMergeDelayErrorTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/MergeAndMergeDelayErrorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/StartWithTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/StartWithTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/SwitchTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/SwitchTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/SwitchTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/SwitchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/ZipTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/ZipTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/ZipTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/combine/ZipTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/BlockingObservableTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/BlockingObservableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DebounceTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DebounceTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DebounceTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DebounceTest$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DebounceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DistinctTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DistinctTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DistinctTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DistinctTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DistinctUntilChangedTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DistinctUntilChangedTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/DistinctUntilChangedTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/ElementAtTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/ElementAtTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/FilterTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/FilterTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/FilterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/FirstAndLastTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/FirstAndLastTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/FirstAndLastTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/FirstAndLastTest$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/FirstAndLastTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/SampleAndThrottleFirstTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/SampleAndThrottleFirstTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/SkipAndTakeTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/SkipAndTakeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/ThrottleWithTimeoutTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/ThrottleWithTimeoutTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/filter/ThrottleWithTimeoutTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/model/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/model/CastObservableTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/model/CastObservableTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/model/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/onerror/OnErrorReturnTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/onerror/OnErrorReturnTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/onerror/OnErrorReturnTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/onerror/OnErrorReturnTest$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/onerror/OnErrorReturnTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/scheduler/ThreadTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/scheduler/ThreadTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/scheduler/ThreadTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/scheduler/ThreadTest$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/rxjava/scheduler/ThreadTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/ApplicationAwareTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/BaseService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/BeanDITest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/MyPrintService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/PersonService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/SonService1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/SonService2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxs/service/TestService1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/convert-def.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/convert-def.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proguard_map.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/proguard_seed.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/Main$tt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/Hold.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/MainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/algorithm/ReverseLinked.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ArrayBlockQueueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ArrayStackTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/CopyOnWriteArrayListTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/DirectMemoryOOM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/LinkedStack$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/LinkedStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/LinkedTransferQueueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/MArrayBlockingQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/MArrayBlockingQueueTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/MArrayBlockingQueueTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/MArrayBlockingQueueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ReadAndWriteLock$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ReadAndWriteLock$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ReadAndWriteLock$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ReadAndWriteLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/SingleLinkedTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/SyncTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/SyncTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/SynchronousQueueTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/SynchronousQueueTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/SynchronousQueueTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ThreadLocalTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ThreadLocalTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/ThreadLocalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/VolatileTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/VolatileTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/concurrent/VolatileTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Americano.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Amphibian.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Breve.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Cappuccino.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Coffee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/CoffeeGenerator$CoffeeIterator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/CoffeeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/FiveTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/FourTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Generator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Impossible.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Latte.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Mocha.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/ThreeTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/TupleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/TwoTuple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/generics/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/innerclass/Outer$Inner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/innerclass/Outer$Inner2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/innerclass/Outer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/innerclass/Parcel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/innerclass/Parcel$RealPrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/innerclass/Parcel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/interfce/BasePrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/interfce/BasePrintImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/jvm/HeapOOM$OOMObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/jvm/HeapOOM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/jvm/StackOOM$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/jvm/StackOOM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/jvm/ThreadTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/jvm/ThreadTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/jvm/ThreadTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/model/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/model/MInteger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/model/OneWayNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/model/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/other/ListNodeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/other/PatternTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/other/RecursiveTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/other/Test1$RealPrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/other/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/threadpool/ThreadPoolTest$PrintRunnable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxs/test/threadpool/ThreadPoolTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/zxs-springboot-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/zxs-springboot-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zxs-springboot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/zxs-springboot.iml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="245" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="zxs-springboot" />
@@ -48,54 +526,77 @@
         <option name="userSettingsFile" value="F:\work\software\apache-maven-3.6.0\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1W3UmVh4LjEMye1xPZ1nAAwId07" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567750360184" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/zxs/config/datasource" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/zxs/mysql" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.085689805" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nio" />
+      <recent name="com.common" />
+      <recent name="com.config" />
+      <recent name="com.nio.test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\eworkspace\zxs-springboot\src\main\java\com\zxs\config\datasource" />
+      <recent name="F:\eworkspace\zxs-springboot\src\main\java\zxs\mysql" />
       <recent name="F:\eworkspace\zxs-springboot\src\main\resources" />
-      <recent name="F:\eworkspace\zxs-springboot\src\main\resources\static" />
-      <recent name="F:\eworkspace\zxs-springboot\src\test\java\com\zxs\test\concurrent" />
+      <recent name="F:\eworkspace\zxs-springboot\src\main\java\com\common" />
+      <recent name="F:\eworkspace\zxs-springboot\src\test\java\com\zxs" />
       <recent name="F:\eworkspace\zxs-springboot\src\test\java\com\zxs\test" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.MybatisTest1.batchInsert">
+  <component name="RunManager" selected="Application.Connection">
     <configuration name="ArrayStackTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zxs.test.concurrent.ArrayStackTest" />
       <module name="zxs-springboot" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zxs.test.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Connection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zxs.mysql.connector.Connection" />
+      <module name="zxs-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zxs.mysql.connector.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +612,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.mybatis.MybatisTest1" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
       <module name="zxs-springboot" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zxs.test.mybatis.*" />
+          <option name="PATTERN" value="com.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nio.NioClient" />
+      <module name="zxs-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nio.NioServer" />
+      <module name="zxs-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerProtocolHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="zxs.mysql.protocol.ServerProtocolHandler" />
+      <module name="zxs-springboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="zxs.mysql.protocol.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,66 +686,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisTest1.batchInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicationBootApp (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="zxs-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zxs.test.mybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zxs.test.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.mybatis.MybatisTest1" />
-      <option name="METHOD_NAME" value="batchInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpelTest1.compile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zxs-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zxs.test.spel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zxs.test.spel" />
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.spel.SpelTest1" />
-      <option name="METHOD_NAME" value="compile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpelTest1.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zxs-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zxs.test.spel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zxs.test.spel" />
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.spel.SpelTest1" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpelTest1.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="zxs-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zxs.test.spel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.zxs.test.spel" />
-      <option name="MAIN_CLASS_NAME" value="com.zxs.test.spel.SpelTest1" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ApplicationBootApp" />
+      <option name="VM_PARAMETERS" value="-verbose:gc -XX:+PrintGCDetails -Xmx524m -Xms524m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -221,21 +706,35 @@
       <item itemvalue="Application.HeapOOM" />
       <item itemvalue="Application.StackOOM" />
       <item itemvalue="Application.ArrayStackTest" />
-      <item itemvalue="JUnit.SpelTest1.test4" />
-      <item itemvalue="JUnit.SpelTest1.test5" />
-      <item itemvalue="JUnit.SpelTest1.compile" />
-      <item itemvalue="Application.MybatisTest1" />
-      <item itemvalue="JUnit.MybatisTest1.batchInsert" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.NioServer" />
+      <item itemvalue="Application.NioClient" />
+      <item itemvalue="Application.ServerProtocolHandler" />
+      <item itemvalue="Spring Boot.ApplicationBootApp" />
+      <item itemvalue="Spring Boot.ApplicationBootApp (1)" />
+      <item itemvalue="Application.Connection" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MybatisTest1.batchInsert" />
-        <item itemvalue="Application.MybatisTest1" />
-        <item itemvalue="JUnit.SpelTest1.compile" />
-        <item itemvalue="JUnit.SpelTest1.test5" />
-        <item itemvalue="JUnit.SpelTest1.test4" />
+        <item itemvalue="Application.Connection" />
+        <item itemvalue="Application.ServerProtocolHandler" />
+        <item itemvalue="Application.NioServer" />
+        <item itemvalue="Application.NioClient" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -248,11 +747,23 @@
       <option name="presentableId" value="Default" />
       <updated>1567749212997</updated>
       <workItem from="1567749220956" duration="927000" />
+      <workItem from="1598491406480" duration="129000" />
+      <workItem from="1598491545843" duration="275000" />
+      <workItem from="1598500132510" duration="16287000" />
+      <workItem from="1598955786771" duration="2340000" />
+      <workItem from="1599039560994" duration="10843000" />
+      <workItem from="1599442813915" duration="24609000" />
+      <workItem from="1599739977234" duration="48098000" />
+      <workItem from="1600661763568" duration="68783000" />
+      <workItem from="1603070824187" duration="2502000" />
+      <workItem from="1603267026510" duration="13148000" />
+      <workItem from="1603868826296" duration="12261000" />
+      <workItem from="1604577706340" duration="14492000" />
+      <workItem from="1605589793207" duration="2453000" />
+      <workItem from="1605834514060" duration="23601000" />
+      <workItem from="1606701687547" duration="4349000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="927000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -270,46 +781,148 @@
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1599706814926">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1599706814926" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603951518772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603951518772" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1605239095797">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605239095797" />
+    <state x="690" y="266" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1602307487551">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602307487551" />
+    <state x="837" y="222" key="#xdebugger.evaluate" timestamp="1600136865491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="837" y="222" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1600136865490" />
+    <state width="578" height="466" key="DebuggerActiveHint" timestamp="1605937144910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="578" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1605937144910" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606189494226">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606189494226" />
+    <state width="1679" height="277" key="GridCell.Tab.0.bottom" timestamp="1606721067872">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598773236047" />
+    <state width="1679" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606721067872" />
+    <state width="1679" height="277" key="GridCell.Tab.0.center" timestamp="1606721067872">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598773236047" />
+    <state width="1679" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606721067872" />
+    <state width="1679" height="277" key="GridCell.Tab.0.left" timestamp="1606721067872">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598773236047" />
+    <state width="1679" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606721067872" />
+    <state width="1679" height="277" key="GridCell.Tab.0.right" timestamp="1606721067872">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598773236047" />
+    <state width="1679" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606721067872" />
+    <state width="1679" height="277" key="GridCell.Tab.1.bottom" timestamp="1606721068276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="340" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598773231212" />
+    <state width="1679" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606721068276" />
+    <state width="1679" height="277" key="GridCell.Tab.1.center" timestamp="1606721068275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="340" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1598773231212" />
+    <state width="1679" height="277" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606721068275" />
+    <state width="1679" height="277" key="GridCell.Tab.1.left" timestamp="1606721068275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="340" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1598773231212" />
+    <state width="1679" height="277" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606721068275" />
+    <state width="1679" height="277" key="GridCell.Tab.1.right" timestamp="1606721068275">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="340" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1598773231212" />
+    <state width="1679" height="277" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606721068275" />
+    <state width="1684" height="190" key="GridCell.Tab.2.bottom" timestamp="1605510028607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1684" height="190" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605510028607" />
+    <state width="1684" height="190" key="GridCell.Tab.2.center" timestamp="1605510028607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1684" height="190" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605510028607" />
+    <state width="1684" height="190" key="GridCell.Tab.2.left" timestamp="1605510028607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1684" height="190" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605510028607" />
+    <state width="1684" height="190" key="GridCell.Tab.2.right" timestamp="1605510028607">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1684" height="190" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605510028607" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1602228223849">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602228223849" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1599190395417">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599190395417" />
+    <state width="1026" height="1038" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1604582983683">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1026" height="1038" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1920.1040@0.0.1920.1040" timestamp="1604582983683" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1604577831287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604577831287" />
+    <state x="690" y="273" key="extract.method.dialog" timestamp="1602484606798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="273" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602484606798" />
+    <state x="574" y="232" width="1049" height="590" key="find.popup" timestamp="1604636456922">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="574" y="232" width="1049" height="590" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604636456922" />
+    <state width="1752" height="846" key="javadoc.popup.new" timestamp="1606475260611">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1752" height="846" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1606475260611" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605070049643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605070049643" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605930041727">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605930041727" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/Main.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/Main.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/nio/test/NioClient.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java</url>
           <line>139</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/nio/test/NioServerMultiReactor.java</url>
-          <line>115</line>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/nio/test/NioServerMultiReactor.java</url>
+          <line>117</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/nio/test/NioServerMultiReactor.java</url>
-          <line>113</line>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/nio/test/NioServerMultiReactor.java</url>
+          <line>115</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/Test1.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/other/ListNodeTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/other/ListNodeTest.java</url>
           <line>105</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
@@ -319,22 +932,22 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/SynchronousQueueTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/SynchronousQueueTest.java</url>
           <line>26</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/ArrayStackTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/ArrayStackTest.java</url>
           <line>52</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/jvm/HeapOOM.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/jvm/HeapOOM.java</url>
           <line>32</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/other/ListNodeTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/other/ListNodeTest.java</url>
           <line>186</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
@@ -359,22 +972,12 @@
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/AbstractExecutorService.java</url>
-          <line>110</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/AbstractExecutorService.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/other/ListNodeTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/other/ListNodeTest.java</url>
           <line>58</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/other/ListNodeTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/other/ListNodeTest.java</url>
           <line>67</line>
           <option name="timeStamp" value="83" />
         </line-breakpoint>
@@ -384,17 +987,17 @@
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/other/ListNodeTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/other/ListNodeTest.java</url>
           <line>39</line>
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/other/ListNodeTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/other/ListNodeTest.java</url>
           <line>27</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/LinkedTransferQueueTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/LinkedTransferQueueTest.java</url>
           <line>46</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
@@ -419,7 +1022,7 @@
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/ArrayBlockQueueTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/ArrayBlockQueueTest.java</url>
           <line>28</line>
           <option name="timeStamp" value="108" />
         </line-breakpoint>
@@ -429,22 +1032,22 @@
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/rocketmq/SyncProducer.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/rocketmq/SyncProducer.java</url>
           <line>22</line>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/algorithm/ReverseLinked.java</url>
-          <line>252</line>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/algorithm/ReverseLinked.java</url>
+          <line>253</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/controller/IndexController.java</url>
-          <line>60</line>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/controller/IndexController.java</url>
+          <line>72</line>
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/rxjava/GroupbyTest.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/rxjava/GroupbyTest.java</url>
           <line>30</line>
           <option name="timeStamp" value="123" />
         </line-breakpoint>
@@ -454,12 +1057,12 @@
           <option name="timeStamp" value="129" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/SyncTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/SyncTest.java</url>
           <line>8</line>
           <option name="timeStamp" value="139" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/concurrent/SyncTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/SyncTest.java</url>
           <line>29</line>
           <option name="timeStamp" value="140" />
         </line-breakpoint>
@@ -475,83 +1078,373 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="beanClass== EmbeddedServletContainerFactory.class" language="JAVA" custom="org.springframework.boot.context.embedded.EmbeddedServletContainerFactory" />
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/processor/SmartProcessor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/processor/SmartProcessor.java</url>
           <line>35</line>
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.14.RELEASE/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java</url>
-          <line>377</line>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <condition expression="beanClass== EmbeddedServletContainerFactory.class" language="JAVA" custom="org.springframework.boot.context.embedded.EmbeddedServletContainerFactory" />
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/processor/SmartProcessor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/processor/SmartProcessor.java</url>
           <line>19</line>
           <option name="timeStamp" value="152" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="beanClass== EmbeddedServletContainerFactory.class" language="JAVA" custom="org.springframework.boot.context.embedded.EmbeddedServletContainerFactory" />
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/processor/SmartProcessor.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/processor/SmartProcessor.java</url>
           <line>27</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zxs/service/PersonService.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/service/PersonService.java</url>
+          <line>34</line>
           <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1-sources.jar!/org/apache/ibatis/executor/resultset/DefaultResultSetHandler.java</url>
-          <line>188</line>
-          <option name="timeStamp" value="164" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/main/Main1.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/main/Main1.java</url>
+          <line>30</line>
           <option name="timeStamp" value="167" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/main/Main1.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/main/Main1.java</url>
+          <line>20</line>
           <option name="timeStamp" value="168" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/spel/SpelTest1.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/spel/SpelTest1.java</url>
+          <line>30</line>
           <option name="timeStamp" value="169" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/spel/SpelTest1.java</url>
-          <line>39</line>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/spel/SpelTest1.java</url>
+          <line>38</line>
           <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/spel/SpelTest1.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="171" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1-sources.jar!/org/apache/ibatis/executor/statement/PreparedStatementHandler.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="175" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/mybatis/MybatisTest1.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="178" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/zxs/test/mybatis/MybatisTest1.java</url>
-          <line>54</line>
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/mybatis/MybatisTest1.java</url>
+          <line>73</line>
           <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1-sources.jar!/org/apache/ibatis/scripting/xmltags/IfSqlNode.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1-sources.jar!/org/apache/ibatis/scripting/xmltags/MixedSqlNode.java</url>
+          <line>31</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/mybatis/MybatisTest1.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/mybatis/MybatisTest1.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/JdbcTest1.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/JdbcTest1.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="beanName.equals(&quot;personService&quot;)" language="JAVA" />
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.14.RELEASE/spring-beans-4.3.14.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java</url>
+          <line>507</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/aop/AopMainTest.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/aop/AopMainTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/aop/DmzAfterReturnAdvice.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/aop/DmzBeforeAdvice.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/aop/advice/MainTestAop1.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/jvm/InitTest1.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/jvm/InitTest1.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/jvm/TestClassLoading.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/jvm/InitTest1.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_91/jre/lib/rt.jar!/sun/misc/Launcher.class</url>
+          <line>155</line>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/ClassLoader.java</url>
+          <line>1472</line>
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/ClassLoader.java</url>
+          <line>1451</line>
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/jvm/CustomClassLoader.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/ConditionObjectTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/suiyi/Test1.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="281" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0-sources.jar!/org/apache/rocketmq/client/impl/consumer/DefaultMQPushConsumerImpl.java</url>
+          <line>258</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0-sources.jar!/org/apache/rocketmq/client/impl/consumer/PullMessageService.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0-sources.jar!/org/apache/rocketmq/client/impl/consumer/RebalancePushImpl.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0-sources.jar!/org/apache/rocketmq/client/impl/consumer/RebalanceService.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/rocketmq/rocketmq-client/4.3.0/rocketmq-client-4.3.0-sources.jar!/org/apache/rocketmq/client/consumer/store/RemoteBrokerOffsetStore.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/pojo/Person.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/lucene/LuceneMain1.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/channel/nio/NioEventLoop.java</url>
+          <line>698</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/bootstrap/ServerBootstrap.java</url>
+          <line>209</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/channel/AbstractChannel.java</url>
+          <line>474</line>
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/channel/DefaultChannelPipeline.java</url>
+          <line>1323</line>
+          <option name="timeStamp" value="316" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/channel/nio/AbstractNioChannel.java</url>
+          <line>412</line>
+          <option name="timeStamp" value="318" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.43.Final/netty-all-4.1.43.Final-sources.jar!/io/netty/channel/SingleThreadEventLoop.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/nio/test/NioServerMultiReactor.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="322" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/nio/test/NioServerMultiReactor.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="323" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/nio/test/NioClient2.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="324" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/concurrent/CyclicBarrier.java</url>
+          <line>248</line>
+          <option name="timeStamp" value="333" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/CyclicBarrierTest.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="334" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/lucene/IndexSearch.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="336" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/lucene/IndexSearch.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="337" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/lucene/IndexSearch.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="339" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/lucene/IndexSearch.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="340" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/lucene/AnalyzerUtils.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="341" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/lucene/AnalyzerUtils.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="342" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/lucene/AnalyzerUtils.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="343" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/ThreadLocalTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="346" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/ThreadLocalTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="347" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/ThreadLocalTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="348" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/concurrent/ThreadLocalTest.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="349" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/test/MainTest.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="352" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/controller/IndexController.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="353" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/HashMap.java</url>
+          <line>925</line>
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/zxs/Main.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="355" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/algorithm/Test.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="359" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/nio/NioServer.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="369" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/nio/NioClient.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="371" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/zxs/mysql/protocol/ServerProtocolHandler.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="375" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="script" language="JAVA" />
+        <watch expression="parser" />
+      </configuration>
       <configuration name="Application">
         <watch expression="((java.beans.MethodDescriptor[])((GenericBeanInfo)beanInfo).methods)[8]" custom="java.beans.MethodDescriptor[],java.beans.GenericBeanInfo" />
+        <watch expression="context" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/zxs_springboot$NioServer.ic" NAME="NioServer Coverage Results" MODIFIED="1605939848605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.nio.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/zxs_springboot$MainTestAop1.ic" NAME="MainTestAop1 Coverage Results" MODIFIED="1595559150577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.aop.advice.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/zxs_springboot$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1599039875182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.test.*</FILTER>
+    </SUITE>
   </component>
 </project>

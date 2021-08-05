@@ -1,0 +1,96 @@
+package ${package.Controller};
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
+
+import ${package.Service}.${table.serviceName};
+
+#if(${restControllerStyle})
+#else
+import org.springframework.stereotype.Controller;
+#end
+#if(${superControllerClassPackage})
+import ${superControllerClassPackage};
+#end
+
+/**
+ * <p>
+ * $!{table.comment} 前端控制器
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+#if(${restControllerStyle})
+@RestController
+#else
+@Controller
+#end
+@RequestMapping("#if(${package.ModuleName})/${package.ModuleName}#end/#if(${controllerMappingHyphenStyle})${controllerMappingHyphen}#else${table.entityPath}#end")
+#if(${kotlin})
+class ${table.controllerName}#if(${superControllerClass}) : ${superControllerClass}()#end
+
+#else
+#if(${superControllerClass})
+public class ${table.controllerName} extends ${superControllerClass} {
+#else
+@Api(value = "$!{table.comment}", tags = "$!{table.comment}")
+public class ${table.controllerName} {
+#end
+
+    @Autowired
+    private ${table.serviceName} service;
+
+    @PostMapping
+    @ApiOperation(value = "添加$!{table.comment}", notes = "添加$!{table.comment}")
+    @ApiImplicitParam(name = "super-token", paramType = "header", defaultValue = "64b379cd47c843458378f479a115c322", value = "token信息", required = true)
+    public RichResult save(@RequestBody Object obj) {
+        // TODO obj类型自行修改
+        service.add(obj);
+        return RestResult.ok();
+    }
+
+    /**
+     * 现在的restful接口统一采用二级资源的形式
+     */
+    @PutMapping("/{id}")
+    @ApiOperation(value = "编辑$!{table.comment}", notes = "编辑$!{table.comment}")
+    @ApiImplicitParam(name = "super-token", paramType = "header", defaultValue = "64b379cd47c843458378f479a115c322", value = "token信息", required = true)
+    public RichResult update(@PathVariable("id") Integer id, @RequestBody Object obj) {
+        // TODO obj类型自行修改
+        service.update(obj);
+        return RestResult.ok();
+    }
+
+    /**
+     * 现在的restful接口统一采用二级资源的形式
+     */
+    @GetMapping("/{id}")
+    @ApiOperation(value = "获取$!{table.comment}详情", notes = "获取$!{table.comment}详情")
+    public RichResult getById(@RequestParam("id") Integer id) {
+        return RestResult.ok(service.getById(id));
+    }
+
+    /**
+     * 现在的restful接口统一采用二级资源的形式
+     */
+    @DeleteMapping("/{id}")
+    @ApiOperation(value = "删除$!{table.comment}", notes = "删除$!{table.comment}")
+    public RichResult remove(@RequestParam("id") Integer id) {
+        service.remove(id);
+        return RestResult.ok();
+    }
+
+    @GetMapping("/list")
+    @ApiOperation(value = "获取$!{table.comment}列表", notes = "获取$!{table.comment}列表")
+    @ApiImplicitParam(name = "super-token", paramType = "header", defaultValue = "64b379cd47c843458378f479a115c322", value = "token信息", required = true)
+    public RichResult<PageResults<List<Object>>> list(Object obj) {
+        return RestResult.ok(service.list(obj));
+    }
+}
+#end
